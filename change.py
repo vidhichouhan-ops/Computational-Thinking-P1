@@ -1,7 +1,9 @@
-data = [[10, 20], [30, 40], [50, 60]]
+import copy
 
-# Create a shallow copy
-update_data = list(data)
+data = [[20, 30], [40, 50], [60, 70]]
+
+# Create a deep copy
+update_data = copy.deepcopy(data)
 
 # Modify inner element
 update_data[1][1] = 99
